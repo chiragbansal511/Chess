@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+button {
+  height: 11vh;
+  width: 11vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button:hover{
+ cursor: pointer;
+ background-color: rgb(42, 20, 5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.white10 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\blackhathi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.black10 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\blackhathi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.white100 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_hathi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.black100 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_hathi.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.white20 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_horse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.black20 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_horse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.white200 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_horse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.black200 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_horse.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.white30 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_bishop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.black30 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_bishop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white300 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_bishop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black300 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_bishop.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white40 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_queen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black40 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_queen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white400 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_queen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black400 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_queen.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white50 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_king.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black50 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_king.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white500 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_king.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black500 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_king.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white60 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_solider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black60 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\black_solider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.white600 {
+  background-color:    #f39c45;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_solider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.black600 {
+  background-color:    #3d1401;
+  background-image: url("D:\Web Development\chess\public\chess piecies\white_solider.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.whitenull {
+  background-color: #f39c45;
+}
+
+.blacknull {
+  background-color: #3d1401;
+}
+
+ .mainchess{
+    height: 100vh;
+    width: 50vw;
+    background-image: url("D:\Web Development\chess\public\chess piecies\lot.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+.chessboard {
+  height: 88vh;
+  width: 88vh;
+ 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f39c45;
 }

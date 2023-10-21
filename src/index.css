@@ -1,13 +1,27 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body::before
+{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    background-image: url("D:\Web Development\chess\public\chess piecies\old-wooden-chess-board-AFVF05219.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
