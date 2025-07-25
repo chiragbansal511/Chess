@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Chess Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+A comprehensive two-player chess implementation built with React, featuring complete rule enforcement for all six chess piece types. The application manages game logic entirely on the client side using an 8x8 board represented as a 2D array. Each piece type follows authentic movement rules including special moves like pawn double-step, castling, and en passant. The system tracks player turns, validates moves, and maintains accurate board state throughout gameplay.
 
-In the project directory, you can run:
+This project demonstrates advanced React state management, complex algorithmic logic for chess rules, and sophisticated game state validation systems.
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+chess/
+├── src/
+│   ├── components/
+│   │   ├── App.js             # Main Board and Move calculator and validator
+│   │   └── boxcomponent.js    #  Each box component
+│   │   └── App.css            # Board and Box stylesheet
+├── public/
+│   └── assets/
+│       └── pieces/            # Chess piece images
+└── package.json               # Dependencies and scripts
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technical Details
 
-### `npm test`
+**Technology Stack:**
+- **Frontend**: React 18, JavaScript ES6+, CSS3
+- **State Management**: React useState with complex state objects
+- **Architecture**: Component-based with modular game logic
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Core Features:**
+- 8x8 board represented as 2D array with piece positioning
+- Complete movement validation for all six piece types
+- Turn-based gameplay with player alternation (White/Black)
+- Special moves: pawn double-step, castling, en passant
+- Move history tracking and board state management
+- Check/checkmate detection algorithms
 
-### `npm run build`
+## Data Flow Model
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1169" height="690" alt="image" src="https://github.com/user-attachments/assets/1f3609a5-72fe-4690-82e8-4f59cd14a52c" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Interface
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="1853" height="901" alt="image" src="https://github.com/user-attachments/assets/b08977be-afa2-426d-b841-516f74287d03" />
 
-### `npm run eject`
+## How to Use and Play
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
+```bash
+git clone https://github.com/chiragbansal511/Chess.git
+cd Chess
+npm install
+npm start
+```
+Access at `http://localhost:3000`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Gameplay
+1. White player moves first in standard chess setup
+2. Click piece to select, click destination square to move
+3. All traditional chess rules enforced (castling, en passant, promotion)
+4. Game detects check, checkmate, and stalemate conditions
+5. Move history tracked with standard chess notation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Controls & Features
+- **Controls**: Click-to-select pieces, click destination to move, new game button
+- **Features**: Complete rule enforcement, special moves, check/mate detection, move history, piece promotion
